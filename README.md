@@ -283,3 +283,68 @@ This feature supports platform maintenance and operational efficiency.
 ---
 
 These features collectively make the **AirBnB Clone Project** a functional, user-centered, and scalable web application that mimics real-world property rental systems.
+
+## 🔒 API Security
+
+Security is a fundamental part of the **AirBnB Clone Project**, especially since it handles sensitive user information, financial transactions, and authentication data.  
+The project follows best practices to ensure confidentiality, integrity, and availability of data.
+
+---
+
+### 🔐 Authentication
+Ensures that only registered users can access the system.  
+- Implemented using **JSON Web Tokens (JWT)** via Django REST Framework.  
+- Tokens are issued upon successful login and must be included in subsequent API requests.  
+**Why it matters:** Prevents unauthorized access and ensures users’ sessions are secure.
+
+---
+
+### 🧾 Authorization
+Controls access to different resources and features based on user roles (e.g., Host, Guest, Admin).  
+- Restricts endpoints using role-based permissions and decorators in Django.  
+- Prevents users from performing unauthorized actions like editing others’ properties or bookings.  
+**Why it matters:** Protects system integrity by enforcing the principle of least privilege.
+
+---
+
+### 🔑 Data Encryption
+Sensitive data such as passwords and payment information are encrypted both in transit and at rest.  
+- Passwords are hashed using Django’s secure password hashing system.  
+- HTTPS ensures data transmitted between the server and client is encrypted.  
+**Why it matters:** Protects user data from being exposed during data breaches or network interception.
+
+---
+
+### ⏱️ Rate Limiting
+Prevents abuse and denial-of-service (DoS) attacks by limiting the number of requests from a single client.  
+- Can be implemented using **Django REST Framework’s throttling classes**.  
+- Reduces the risk of brute-force login attempts and API overload.  
+**Why it matters:** Maintains system performance and prevents malicious API exploitation.
+
+---
+
+### 🧰 Input Validation & Sanitization
+Ensures all user inputs are validated before processing.  
+- Prevents injection attacks (SQL, XSS, etc.).  
+- Django’s built-in validators and serializers help ensure clean, safe input.  
+**Why it matters:** Reduces vulnerabilities caused by malicious or malformed inputs.
+
+---
+
+### 💳 Secure Payment Handling
+Protects the integrity of payment transactions.  
+- Integrates with trusted third-party payment gateways (e.g., Stripe, Paystack).  
+- Payment details are tokenized and never stored directly in the database.  
+**Why it matters:** Ensures user financial data remains secure and compliant with industry standards.
+
+---
+
+### 🧩 API Key & Environment Variable Protection
+Sensitive keys and credentials are stored securely in environment variables.  
+- Managed using `.env` files and never pushed to version control.  
+- Django’s settings use `os.environ` for loading secrets.  
+**Why it matters:** Prevents exposure of API keys or credentials in public repositories.
+
+---
+
+Together, these measures create a **secure backend environment** that protects user data, safeguards payments, and maintains system reliability — ensuring trust and compliance within the AirBnB Clone platform.
