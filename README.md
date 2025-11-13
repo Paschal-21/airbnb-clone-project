@@ -219,3 +219,67 @@ Tracks payment transactions for bookings.
 ---
 
 This schema ensures clean data relationships and efficient queries, supporting both host and guest interactions within the AirBnB Clone ecosystem.
+
+## 🚀 Feature Breakdown
+
+The **AirBnB Clone Project** includes several key features that replicate the core functionality of the real AirBnB platform.  
+Each feature contributes to delivering a seamless experience for both guests and hosts.
+
+---
+
+### 👤 User Management
+Handles registration, authentication, and profile management for users.  
+Users can sign up as hosts or guests, update their personal information, and securely log in to access platform services.  
+This feature ensures secure access control and personalized user experiences.
+
+---
+
+### 🏘️ Property Management
+Enables hosts to list, update, and manage their properties.  
+Hosts can upload details such as property title, description, location, price, and images.  
+This feature allows easy property visibility and discoverability for potential guests.
+
+---
+
+### 📅 Booking System
+Facilitates reservations for users who wish to book listed properties.  
+Guests can view availability, select check-in and check-out dates, and make confirmed bookings.  
+This feature ensures proper scheduling and avoids booking conflicts.
+
+---
+
+### 💳 Payment Integration
+Manages secure payment processing for bookings.  
+Users can make payments using various methods (e.g., cards or bank transfer), and payment statuses are tracked.  
+This feature provides a trusted transaction system between guests and hosts.
+
+---
+
+### 💬 Review & Rating System
+Allows guests to share feedback and rate properties they have stayed in.  
+Reviews improve transparency, trust, and help future guests make informed booking decisions.  
+Hosts can also view ratings to improve their service quality.
+
+---
+
+### 🔍 Search & Filter
+Enables users to search for properties using filters such as location, price range, and property type.  
+This feature enhances user experience by helping guests find suitable properties faster and more accurately.
+
+---
+
+### 🖼️ Image Upload & Gallery
+Allows hosts to upload multiple photos of their properties.  
+Images are stored securely and displayed in a gallery format for guests to view.  
+This feature helps improve property visibility and user confidence before booking.
+
+---
+
+### 🧭 Admin Dashboard *(optional enhancement)*
+Provides administrators with oversight of users, listings, and bookings.  
+Admins can manage reports, handle disputes, and monitor platform performance.  
+This feature supports platform maintenance and operational efficiency.
+
+---
+
+These features collectively make the **AirBnB Clone Project** a functional, user-centered, and scalable web application that mimics real-world property rental systems.
